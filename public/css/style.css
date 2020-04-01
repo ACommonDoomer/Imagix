@@ -1,0 +1,79 @@
+nav{
+	background-color: #FFB62C;
+}
+#app {
+	position: relative;
+	top: 100px;
+  	background-color: #2D2D2D;
+}
+
+#info {
+	text-align: center;
+	
+}
+div.container{
+  background-color: #2D2D2D;
+}
+
+.description {
+  color: #fafafa;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	
+}
+
+.description-err {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color: red;
+
+}
+
+.title {
+	font-size: 80px;
+	font-family: 'Fredoka One', cursive;
+	  color: #fafafa;
+}
+
+#upload-img {
+	margin-top: 20px;
+	border: solid 4px;
+	border-color: #FFB62C;
+	border-radius: 0;
+	padding: 10px 0px;
+	font-weight: bold;
+	color: #fafafa;
+	background: #FFB62C;
+	border-radius: 30px;
+	font-family: 'QuickSand', sans-serif;
+	font-size: 15px;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+#upload-img:hover {
+	cursor: pointer;
+
+}
+
+.input-field {
+	margin-left: 180px;
+	margin-right: 180px;
+	
+}
+
+.file-field input.file-path{
+	border: aliceblue;
+
+}
+
+@media only screen and (max-width: 768px) {
+	#app {
+		top: 50px;
+    background-color: #2D2D2D;
+	}
+	.input-field {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}

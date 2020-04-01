@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="/css/modal.css" type="text/css">
+    <title>Imagix</title>
+	<link rel="icon" type="image/png" href="https://i.imgur.com/VC3r71N.png">
+</head>
+<body>
+    <nav>
+        <div>
+             <ul>
+                <li><a  href="/">IMAGIX</li>
+                    <li class="right"><a href="https://github.com/BloxOfficial/Imagix">GITHUB</a></li>   
+                <li class="right"><a href="/about">ABOUT</a></li>
+                <li class="right"><a href="/">SUBIR NUEVO</a></li>   
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container darken-1 z-depth-5">
+        <div class="row">
+            <div class="col s12">
+                <label for="">Imagen URL</label>
+                <div id="image-url" class="space">
+                    <input type="text" value="<%= typeof msg != 'undefined' ? url : '' %>">            
+                    <span class="btn" id="copy">Copiar</span>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col s6">
+                <label  for="">Vista Previa</label>
+                <div class="space">
+                    <img src="<%= typeof msg != 'undefined' ? file : '' %>" class="responsive-img"/>
+                </div>
+            </div>
+            <div class="col s6">
+                <label for="">HTML Embed</label><br>
+                <p id="image-embed">
+                    <%= typeof msg != 'undefined' ? embed : '' %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/jscript.js"></script>
+</body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Imagix</title>
+	<link rel="icon" type="image/png" href="https://i.imgur.com/VC3r71N.png">
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+    <nav>
+        <div>
+             <ul>
+               
+                <li class="right"> <a href="https://github.com/BloxOfficial/Imagix">GITHUB</a></li>   
+                <li class="right"> <a href="/about"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="container" id="app">
+            <div class="row">
+                <div class="col s12" id="info">
+                    <h1 class="title"><img src="https://i.imgur.com/2lE8o3q.png" width="400" alt=""></h1>
+					<p class="description">Aloja tus imágenes en línea, no requiere registro.</p>
+                    <p class="description-err"><%= typeof msg != 'undefined' ? msg : ''%><a href="#"></a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <form role="form" action="/upload" method="POST" enctype="multipart/form-data" class="form" action="upload">
+                        <div class="file-field input-field" id="info">
+                            <div id="upload-img">
+                                <span id="img-text">SUBIR</span>
+                                <input name="image" type="file" id="image" accept="image/*">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>                             
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/jscript.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <style>
+    {
+    background-color: #d24dff;
+}
+  
+</html>
